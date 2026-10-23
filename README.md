@@ -44,27 +44,27 @@ sources of variability for each stream (CA,LL,TY,UL). The following codes comput
 the true system state of each time series as well as mean values for observation error,
 process noise and deterministic variation of each stream.
 
-Run_Particle_Filter_CA.R
-Run_Particle_Filter_LL.R
-Run_Particle_Filter_TY.R
-Run_Particle_Filter_UL.R
+Run_Particle_Filter_CA.R\n
+Run_Particle_Filter_LL.R\n
+Run_Particle_Filter_TY.R\n
+Run_Particle_Filter_UL.R\n
 
-The MCMC chains are saved as:
-
-out_EDM_CA_TOTAL_varProc.RData
-out_EDM_2_CA_TOTAL_varProc.RData
-
-out_EDM_LL_TOTAL_varProc.RData
-
-out_EDM_TY_TOTAL_varProc.RData
-out_EDM_2_TY_TOTAL_varProc.RData
-out_EDM_3_TY_TOTAL_varProc.RData
-out_EDM_4_TY_TOTAL_varProc.RData
-
-out_EDM_UL_TOTAL_varProc.RData
-out_EDM_2_UL_TOTAL_varProc.RData
-out_EDM_3_UL_TOTAL_varProc.RData
-
+The MCMC chains are saved as:\n
+\n
+out_EDM_CA_TOTAL_varProc.RData\n
+out_EDM_2_CA_TOTAL_varProc.RData\n
+\n
+out_EDM_LL_TOTAL_varProc.RData\n
+\n
+out_EDM_TY_TOTAL_varProc.RData\n
+out_EDM_2_TY_TOTAL_varProc.RData\n
+out_EDM_3_TY_TOTAL_varProc.RData\n
+out_EDM_4_TY_TOTAL_varProc.RData\n
+\n
+out_EDM_UL_TOTAL_varProc.RData\n
+out_EDM_2_UL_TOTAL_varProc.RData\n
+out_EDM_3_UL_TOTAL_varProc.RData\n
+\n
 #Note: For CA,TY and UL, extended runs were needed to reach convergence. 
 
 The filter outputs/true system states are saved as:
