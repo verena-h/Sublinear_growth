@@ -44,35 +44,35 @@ sources of variability for each stream (CA,LL,TY,UL). The following codes comput
 the true system state of each time series as well as mean values for observation error,
 process noise and deterministic variation of each stream.
 
-Run_Particle_Filter_CA.R
-Run_Particle_Filter_LL.R
-Run_Particle_Filter_TY.R
-Run_Particle_Filter_UL.R
+Run_Particle_Filter_CA.R; 
+Run_Particle_Filter_LL.R; 
+Run_Particle_Filter_TY.R; 
+Run_Particle_Filter_UL.R; 
 
 The MCMC chains are saved as:
 
-out_EDM_CA_TOTAL_varProc.RData
-out_EDM_2_CA_TOTAL_varProc.RData
+out_EDM_CA_TOTAL_varProc.RData; 
+out_EDM_2_CA_TOTAL_varProc.RData; 
 
-out_EDM_LL_TOTAL_varProc.RData
+out_EDM_LL_TOTAL_varProc.RData; 
 
-out_EDM_TY_TOTAL_varProc.RData
-out_EDM_2_TY_TOTAL_varProc.RData
-out_EDM_3_TY_TOTAL_varProc.RData
-out_EDM_4_TY_TOTAL_varProc.RData
+out_EDM_TY_TOTAL_varProc.RData; 
+out_EDM_2_TY_TOTAL_varProc.RData; 
+out_EDM_3_TY_TOTAL_varProc.RData; 
+out_EDM_4_TY_TOTAL_varProc.RData; 
 
-out_EDM_UL_TOTAL_varProc.RData
-out_EDM_2_UL_TOTAL_varProc.RData
-out_EDM_3_UL_TOTAL_varProc.RData
+out_EDM_UL_TOTAL_varProc.RData; 
+out_EDM_2_UL_TOTAL_varProc.RData; 
+out_EDM_3_UL_TOTAL_varProc.RData; 
 
 #Note: For CA,TY and UL, extended runs were needed to reach convergence. 
 
 The filter outputs/true system states are saved as:
 
-filterout_CA.rda
-filterout_LL.rda
-filterout_TY.rda
-filterout_UL.rda
+filterout_CA.rda; 
+filterout_LL.rda; 
+filterout_TY.rda; 
+filterout_UL.rda; 
 
 #### 2.1.2 Extract Parameter Distributions ####
 
@@ -92,10 +92,10 @@ Data used: out_EDM_3_UL_TOTAL_varProc.RData
 
 The parameter distrubion are saved as:
 
-filterout_CA_whole.rda
-filterout_LL_whole.rda
-filterout_TY_whole.rda
-filterout_UL_whole.rda
+filterout_CA_whole.rda; 
+filterout_LL_whole.rda; 
+filterout_TY_whole.rda; 
+filterout_UL_whole.rda; 
 
 #### 2.2 Theta Fitting ####
 
@@ -103,24 +103,24 @@ The true trajectory of each stream is used to get temporal estimates for theta a
 the growth rate related parameter alpha.
 
 The following codes are used to receive temporal estimates for theta and alpha:
-Theta_fitting_CA.R
+Theta_fitting_CA.R; 
 Data used: filterout_CA.rda
 
-Theta_fitting_LL.R
+Theta_fitting_LL.R; 
 Data used: filterout_LL.rda
 
-Theta_fitting_TY.R
+Theta_fitting_TY.R; 
 Data used: filterout_TY.rda
 
-Theta_fitting_UL.R
+Theta_fitting_UL.R; 
 Data used: filterout_UL.rda
 
 Theta and alpha estimates are saved as:
 
-Theta_est_CA.rda
-Theta_est_LL.rda
-Theta_est_TY.rda
-Theta_est_UL.rda
+Theta_est_CA.rda; 
+Theta_est_LL.rda; 
+Theta_est_TY.rda; 
+Theta_est_UL.rda; 
 
 ###### 3. Figures Main Text ######
 
@@ -128,28 +128,28 @@ Code generating Figures 1A,C-D:
 Fig1ACD.R
 
 Codes/Files generating Figure 2E:
-Fig2E.R
+Fig2E.R; 
 Data used: data.csv
 
 Codes/Files generating Figure 3:
-Create_dataframe_Fig_3.R
+Create_dataframe_Fig_3.R; 
 Fig3.R
 Data used:
-filterout_CA_whole.rda
-filterout_LL_whole.rda
-filterout_TY_whole.rda
-filterout_UL_whole.rda
+filterout_CA_whole.rda; 
+filterout_LL_whole.rda; 
+filterout_TY_whole.rda; 
+filterout_UL_whole.rda; 
 Parameter distributions saved as:
 df_Variability_Sources_Fig_3.csv
 
 
 Codes/Files generating Figure 4:
-Fig4.R
+Fig4.R; 
 Data used:
-Theta_est_CA.rda
-Theta_est_LL.rda
-Theta_est_TY.rda
-Theta_est_UL.rda
+Theta_est_CA.rda; 
+Theta_est_LL.rda; 
+Theta_est_TY.rda; 
+Theta_est_UL.rda; 
 
 ###### 4. Supplement ######
 
@@ -157,79 +157,79 @@ Theta_est_UL.rda
 Codes/Files generating Fig S1:
 FigS1.R
 Data loaded from Theta_fitting_X.R: 
-CA_r2_plots.rda
-LL_r2_plots.rda
-TY_r2_plots.rda
-UL_r2_plots.rda
+CA_r2_plots.rda; 
+LL_r2_plots.rda; 
+TY_r2_plots.rda; 
+UL_r2_plots.rda; 
 
 Codes/Files generating Fig S2:
-FigS2.R
-Data used:
-filterout_CA_whole.rda
-filterout_LL_whole.rda
-filterout_TY_whole.rda
-filterout_UL_whole.rda
+FigS2.R; 
+Data used: 
+filterout_CA_whole.rda; 
+filterout_LL_whole.rda; 
+filterout_TY_whole.rda; 
+filterout_UL_whole.rda; 
 
-Codes/Files generating Fig S3:
+Codes/Files generating Fig S3: 
 FigS3.R
 Data used: 
-Theta_est_CA.rda
-Theta_est_LL.rda
-Theta_est_TY.rda
-Theta_est_UL.rda
-filterout_CA.rda
-filterout_LL.rda
-filterout_TY.rda
+Theta_est_CA.rda; 
+Theta_est_LL.rda; 
+Theta_est_TY.rda; 
+Theta_est_UL.rda; 
+filterout_CA.rda; 
+filterout_LL.rda; 
+filterout_TY.rda; 
 filterout_UL.rda
 
 Codes/Files generating Fig S4:
-FigS4.R
+FigS4.R; 
 Data used from Theta_fitting_X.R: 
-dNNdt_N_CA.rda
-dNNdt_N_LL.rda
-dNNdt_N_TY.rda
-dNNdt_N_UL.rda
+dNNdt_N_CA.rda; 
+dNNdt_N_LL.rda; 
+dNNdt_N_TY.rda; 
+dNNdt_N_UL.rda; 
 
 #### 4.2 Tables ####
 
 Codes/Files to generate Table S1-2:
-TabS1.R
+TabS1.R; 
 TabS2.R
 
 Data used:
-filterout_CA_whole.rda
-filterout_LL_whole.rda
-filterout_TY_whole.rda
-filterout_UL_whole.rda
+filterout_CA_whole.rda; 
+filterout_LL_whole.rda; 
+filterout_TY_whole.rda; 
+filterout_UL_whole.rda; 
 
 Codes/Files to generate Table S3:
-TabS3.R
+TabS3.R; 
 Data used: df_Variability_Sources_Fig_3.csv
 
 Codes/Files to generate Table S4-5:
-TabS4.R
-TabS5.R
+TabS4.R; 
+TabS5.R; 
 Data used: 
-out_EDM_2_CA_TOTAL_varProc.RData
-out_EDM_LL_TOTAL_varProc.RData
-out_EDM_4_TY_TOTAL_varProc.RData
-out_EDM_3_UL_TOTAL_varProc.RData
+out_EDM_2_CA_TOTAL_varProc.RData; 
+out_EDM_LL_TOTAL_varProc.RData; 
+out_EDM_4_TY_TOTAL_varProc.RData; 
+out_EDM_3_UL_TOTAL_varProc.RData; 
 
 Codes/Files to generate Table S6:
-Create_df_var_alpha_theta.R
+Create_df_var_alpha_theta.R; 
 Data used:
-Theta_est_CA.rda
-Theta_est_LL.rda
-Theta_est_TY.rda
-Theta_est_UL.rda
-TabS6.R
+Theta_est_CA.rda; 
+Theta_est_LL.rda; 
+Theta_est_TY.rda; 
+Theta_est_UL.rda; 
+TabS6.R; 
 Data used:
 Var_alpha_theta.csv
 
 Codes/Files to generate Table S7:
-TabS7.R
+TabS7.R; 
 Data used:
-Theta_est_CA.rda
-Theta_est_LL.rda
-Theta_est_TY.rda
+Theta_est_CA.rda; 
+Theta_est_LL.rda; 
+Theta_est_TY.rda; 
 Theta_est_UL.rda
