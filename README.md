@@ -27,19 +27,6 @@ Verena Haring
 Department of Biology, University of Graz, Holteigasse 6, 8010 Graz, Austria
 Email: verena.haring@uni-graz.at
 
-################################################################################
-Table of Content:
-
-1. Datafile
-2. Analysis
-  2.1 Particle Filter
-    2.1.1
-    2.1.2
-  2.2 Theta Fitting
-3. Figures Main Text
-4. Supplement
-  4.1 Figures
-  4.2 Tables 
 
 ################################################################################
 
